@@ -1,0 +1,253 @@
+/* This code below makes the entire page able to spread all the way into the corners.
+    It also allows all elements of the page to be included when sizing for width and height. */
+
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+/* This code changes the background color of the page. */
+.WholePage{
+    background-color: rgb(221, 217, 214);
+}
+/* The header is being padded in order to give it a bigger space to take up when changing its backgrodun color
+    all the font wihtin the header is being changed to match. */
+.Header {
+    background-color: rgb(67, 69, 73);
+    padding:20px 20px 20px 0px;
+    font-family: 'Courier New', Courier, monospace;
+}
+
+/* The h1 tag within the header is being displayed as inline-block to allows things to be places next to it,
+    it is given a background color. It is given padding and a bigger font. */
+.Header h1 {
+    display:inline-block;
+    margin-left:0px;
+    margin-top:5px;
+    margin-bottom: 5px;
+    background-color: rgb(35, 97, 155);
+    font-size: 60px;
+    padding-left: 50px;
+    border-radius: 10px;
+}
+
+/* The a tags are being changed to the color black. */
+a{
+    color:black;
+}
+
+/* The entire nav section is being floated to the right as well as a margin in order to move it closer ot the center of the header. */
+.Header nav {
+    margin-top:15px;
+    float:right
+}
+
+/* The individual words of the nav section are displayed side by side using inline-block.
+    The font size is increased as well as given spacing in between each of the words using margin.*/
+.Header ul li {
+    display:inline-block;
+    font-size: 25px;
+    margin-left: 20px;
+    margin-right: 10px;
+}
+
+/* The color of the links in the header navigation section is being changed. */
+.Header ul li a{
+    color:rgb(35, 97, 155);
+}
+
+
+/* The caption is the area between the header and the main body of the page. In this code is linked the background image.
+    padding is given to enlarge the area the image takes up as well as making the image take up the entire space without repeating. */
+.Caption {
+    padding:2%;
+    background-image: url("../Images/Background.jpeg");
+    background-size: cover;
+}
+
+/* The caption img is the avatar being displayed in the Caption space.
+    The edges are made round using border radius.  */
+.Caption img{
+    border-radius: 10px;
+}
+
+/* This is used to make the words inside the Caption section move to the right and contain it. */
+.Caption div {
+    float:right;
+}
+
+/* This section is used to give the caption inside the "Caption" class a background color as well as make it's position relative.
+    This ensures the "top" is moved away from the border of the section. */
+.Caption div{
+    background-color: rgb(221, 217, 214);
+    position: relative;
+    top:200px;
+    border-radius: 5px;
+}
+
+/* This give the entire "About Me" and "Work" section a margin to space it out. */
+.EntireAboutWork {
+    margin:30px;
+}
+
+/* This flexes the "About Me" section in order to move things as well as ensure the text begins on the rioght when starting a new line. */
+.AboutAsWhole {
+    display:flex; 
+    text-align: right;
+}
+
+/* This move the paragraph next to the About me header away from it as well as enlarges the font and changes it's color. */
+.AboutAsWhole h2{
+    margin-right: 85px;
+    font-size: 50px;
+    color:rgb(5, 93, 134);
+}
+
+/* This wraps the paragraph so it starts a new line instead of making the entire page wider. Font size is enlarged.
+    The text is made to start along the left when it is wrapped. The text is move away from the header. */
+.AboutAsWhole p{
+    flex-wrap: wrap;
+    font-size: 20px;
+    text-align: left;
+    margin-left:20px;
+}
+
+/* This is the second section of the paragraph. It is flexed in order to freely move it but made relative so movment is related
+    to the paragraph above it. It is seperated from the parapgrah above and the content below it using margin. */
+.AboutAsWhole p span{
+    display: flex;
+    position:relative;
+    margin-top: 20px;
+    margin-bottom:20px;
+}
+
+/* This floats the work header to the left as well as give it a differnt color and enlraged font. It moves the boxes next to it
+    as a whole away form it using margin. */
+.WorkHeader{
+    color:rgb(5, 93, 134);
+    font-size: 50px;
+    margin-right: 50px;
+    float:left;
+}
+
+/* This uses flex to make the entire boxes able to move freely as well as well as decide how the boxes act amoung each other.
+    Flex-wrap is wrapping the boxes instead of widening the page. The boxes are wrapped in a row direction. the content is
+    displayed in the center.  */
+.BoxesAsWhole{
+    display:flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: center;
+}
+
+/* This decides the size, border, padding, and width of the smaller boxes in the page. A background image is displayed in the 
+    padding area. The image is positiond as well as made to cover the entire background without repeating. */
+.SmallerBoxes{
+    border:rgb(5, 125, 236) solid 10px;
+    margin:5px;
+    padding:70px 00px 70px 00px;
+    width:44.5%;
+    flex-direction: column;
+    background-image: url("../Images/coming-soon-message-illuminated-with-light-projector_1284-3622.jpeg");
+    background-size: cover;
+    background-position: center;  
+}
+
+/* This section is moving the text inside the smaller boxes to the left using float and containing it's padding.
+    The position of the words is relative so they move away from the borders of the box.*/
+.SmallerBoxes section {
+    top:50px;
+    position: relative;
+    float:left;
+    background-color: rgb(221, 217, 214);
+    border-radius: 0px 5px 5px 0px;
+}
+
+/* This code sets the background image of the first smaller box in the work section*/
+#smallbox1{
+    background-image: url("../Images/WorkDayScheduler.png");
+    background-size: cover;
+    background-position: center
+
+}
+
+/* This code sets the background image of the second smaller box in the work section*/
+#smallbox2{
+    background-image: url("../Images/Password_Generator.png");
+    background-size: cover;
+    background-position: center
+}
+
+#smallbox3{
+    background-image: url("../Images/Dirt.png");
+    background-size: cover;
+    background-position: center
+}
+
+/* This decides the size, border, padding, and width of the bigger box in the page. A background image is displayed in the 
+    padding area. The image is positiond as well as made to cover the entire background without repeating. */
+.BiggerBox{
+    border:rgb(35, 97, 155) solid 10px;
+    margin:5px;
+    padding:275px 00px 275px 00px;
+    flex-direction: column;
+    width:90%;
+    background-image:url("../Images/SoundBites.png"); 
+    background-size: cover;
+    background-position: center;
+}
+
+/* This is used to changed the position of the link text associted with the bigger boxe's linked background.
+    It is given a background-color as well as moved near the bottom as well as floated to the left.
+    The font size is enlargened. */
+#Link{
+    position: relative;
+    background-color: rgb(221, 217, 214);
+    float:left;
+    top:200px;
+    font-size: 30px;
+    border-radius: 0px 5px 5px 0px;
+}
+
+/* This is used to give the footer padding around to enlargen it's background area. It's font is changed and it is changed
+    into a flex in order to display the words "Contact" and "Me" above each other.  */
+footer {
+    padding:20px 20px 20px 0px;
+    font-family: 'Courier New', Courier, monospace;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+/* This moves the words "Contact" and "Me" using margin and increases it's font size. */
+footer h2{
+    margin-left: 30px;
+    margin-top:5px;
+    margin-bottom: 5px;
+    font-size: 40px;
+}
+
+/* This is making the word "ME" in the h2 display in a differnt line as the word "Contact"
+    as well as make the word wrap to the right side.  */
+footer h2 span{
+    display: block;
+    text-align: right;
+}
+
+/* This is displaying the the contact information as flex which allows it to center itself despite
+    the block being used above. It is moved using margin and made to display in the center of the footer.   */
+.Lower{
+    margin-top: 15px;
+    margin-left: 10%;
+    display:flex;
+    align-items: center;
+}
+
+
+/* This section is seperating the individual information in the footer nav area. It is displayed next to each other.
+    The font is enlarged and the are spaced out from each other using margin. */
+.Lower ul li{
+    display:inline-block;
+    font-size: 25px;
+    margin-left: 30px;
+}
