@@ -1,0 +1,143 @@
+.resume {
+    width: 90vw;
+    height: 100%;
+    font-family: 'Open Sans Condensed', sans-serif;
+    
+}
+
+.resumeTitle{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100vw;
+    padding: 10px 0px 20px 0px !important;
+}
+
+.resumeSubTitle{
+    width: 60vw;
+}
+
+.resumeName {
+    font-size: 2rem;
+}
+
+.resumeCatch{
+    font-size: 1.5rem;
+    font-weight: bolder;
+}
+
+.resumeContainer{
+    display: flex;
+    width: 100vw;
+    justify-content: center;
+}
+.resumeSubContain{
+    width: 60vw;
+    display: flex;
+    flex-direction: row;
+}
+
+.resume-left {
+    flex: 1;
+    /* background-color: #fff; */
+    flex-direction: column;
+    margin-right: 25px !important;
+
+}
+
+.resume-right {
+    flex: 1;
+    /* background-color: red; */
+    flex-direction: column;
+    margin-left: 25px !important;
+}
+
+.resume h2 {
+    font-size: 2rem;
+}
+
+.workTitle{
+    padding-top: 10px !important;
+}
+
+.educationHeader,
+.workHeader {
+    display: flex;
+    justify-content: space-between;
+    font-size: 1rem;
+    padding-top: 5px !important;
+}
+
+.edTime,
+.workTime {
+    font-style: italic;
+}
+
+.edDegree,
+.workDetails {
+    font-size: .75rem;
+    padding: 5px 0px !important;
+}
+
+.stackTitle,
+.softieTitle,
+.resContactTitle{
+font-size: 1.5rem;
+}
+
+.resumeStack,
+.resumeSoftie,
+.resumeContact{
+    padding: 10px !important;
+}
+
+.resumeContact{
+    padding-bottom: 20px !important;
+}
+.resumeStack {
+    display: flex;
+    flex-direction: column;
+}
+
+.stackTopic{
+    font-size: 1rem;
+    padding: 5px 0px !important;
+}
+
+.stackContent{
+    font-size: .75rem;
+}
+
+.resumeContact{
+    display: flex;
+    flex-direction: column;
+}
+.resumeMini{
+    width: 15px;
+    padding-right: 2px !important;;
+}
+
+@media screen and (max-width: 800px){
+.resumeContainer,
+.resumeSubContain{
+    display: flex;
+    flex-direction: column;
+    width: auto;
+}
+.resume-right,
+.resumeStack,
+.resumeSoftie,
+.resumeContact{
+    width: auto;
+    padding: 0px !important;
+    margin: 0px !important;
+}
+
+}
+
+.ResumeDownload {
+    font-size: 25px;
+    margin-top: 50px;
+    color: rgb(109, 109, 116);
+}

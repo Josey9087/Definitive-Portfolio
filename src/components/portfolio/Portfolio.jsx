@@ -8,7 +8,7 @@ export const Portfolio = () => {
 
             <div className="projectListContent">
             {projects.map((project) => (
-                <Project key={project.id} img={project.img} ghLink={project.ghLink} siteLink={project.siteLink} title={project.title}/>
+                <Project key={project.id} img={project.img} gitLink={project.gitLink} siteLink={project.siteLink} title={project.title}/>
             ))}
             </div>
         </div>

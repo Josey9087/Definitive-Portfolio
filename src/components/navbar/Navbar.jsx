@@ -5,6 +5,8 @@ function Navbar({ currentPage, handlePageChange }) {
   return (
     <nav className="nav">
         <div className="nav-left">
+
+        <h1 className="navName">J Y</h1>
         </div>
         <div className="nav-right">
             <span className='navItems'>
