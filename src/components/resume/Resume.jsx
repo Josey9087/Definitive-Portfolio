@@ -1,5 +1,5 @@
 import './resume.css';
-import ResumePDF from '/Users/joseyanez/Definitive-Portfolio/src/Resume/JoseYanezResume.pdf'
+import ResumePDF from './JoseYanezResume.pdf'
 const Resume = () => {
     return(
         <div className="resume">
