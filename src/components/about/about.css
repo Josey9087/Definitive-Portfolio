@@ -71,8 +71,10 @@
 }
 
 .megaJose {
+    padding: 10px;
     height: 70vh;
     width: auto;
+    border-radius: 20px;
 }
 
 @media screen and (max-width: 850px){
@@ -100,7 +102,7 @@
         height: 30vh;
         width: 100vw;
     }
-    .megaLaurel{
+    .megaJose{
         height: 400px;
         width: auto;
     }
@@ -137,8 +139,8 @@
         height: 30vh;
         width: 100vw;
     }
-    .megaLaurel{
-display: none;
+    .megaJose{
+    display: none;
     }
 }
 
@@ -164,7 +166,7 @@ display: none;
     text-align: center;
 }
 
-.megaLaurel{
+.megaJose{
     display: none;
 }
 

@@ -1,5 +1,5 @@
 import './about.css';
-import Jose from "../images/Avatar.jpeg"
+import Jose from "../images/HeadShot.jpeg"
 const Intro = () => {
     return (
         <div className="intro">
